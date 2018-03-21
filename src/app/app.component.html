@@ -1,0 +1,38 @@
+<div style="display:inline;">
+     <div style="width:auto;float:left;" >
+          <label>Email:
+               <input [(ngModel)]="currentEmail" placeholder="email"><br>
+               Password:
+               <input [(ngModel)]="currentPassword" placeholder="password"><br>
+          </label>
+          <button class="get" title="Login" (click)="login()">Login</button>
+          <br>
+     </div>
+
+     <div style="width:auto;float:left;">
+          <label>
+               Name:
+               <input [(ngModel)]="registerName" placeholder="name"><br>
+               Email:
+               <input [(ngModel)]="registerEmail" placeholder="email"><br>
+               Password:
+               <input [(ngModel)]="registerPassword" placeholder="password"><br>
+          </label>
+          <button class="get" title="Register" (click)="register()">Register</button>
+
+     </div>
+     <div >
+          <br>
+          <button class="get" title="Item" (click)="item()">Item</button>
+          <table [innerHTML]="tableItem" >
+          </table>
+     </div>
+     <div >
+          <br>
+          <button class="get" title="Category" (click)="category()">Category</button>
+          <table [innerHTML]="tableCat" >
+          </table>
+     </div>
+
+
+</div>
